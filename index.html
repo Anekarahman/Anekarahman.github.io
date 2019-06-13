@@ -1,54 +1,116 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Brown Bears</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
 </head>
-
 <body>
-  <nav>
-    <a href="./index.html">Brown Bear</a>
-    <a href="./aboutme.html">About Me</a>
-  </nav>
-  <h1>The Brown Bear</h1>
-  <nav>
-    <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#habitat">Habitat</a></li>
-      <li><a href="#media">Media</a></li>
-    </ul>
-  </nav>
-  <div id="introduction">
-    <h2>About Brown Bears</h2>
-    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the
-      Atlas bear and the Himalayan brown bear.</p>
-    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
-    <h3>Species</h3>
-    <ul>
-      <li>Arctos</li>
-      <li>Collarus</li>
-      <li>Horribilis</li>
-      <li>Nelsoni (extinct)</li>
-    </ul>
-    <h3>Features</h3>
-    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
-  </div>
-  <div id="habitat">
-    <h2>Habitat</h2>
-    <h3>Countries with Large Brown Bear Populations</h3>
-    <ol>
-      <li>Russia</li>
-      <li>United States</li>
-      <li>Canada</li>
-    </ol>
-    <h3>Countries with Small Brown Bear Populations</h3>
-    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
-  </div>
-  <div id="media">
-    <h2>Media</h2>
-    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" />
-    <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" height="240" width="320" controls>Video not supported</video>
-  </div>
-</body>
 
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">BTS</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">About BTS</h3>
+  <h5 style="text-align:center;">By Aneka Rahman</h5>
+  <p>BTS, also known as the Bangtan Boys, is a seven-member South Korean boy band formed in Seoul in June 13, 2013. The septet co-writes and produces much of their output. Initially rooted in hip hop, the group music style has evolved to include a wide range of genres.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:pink;font-size:25px;color: #f7f7f7;">Members</span>
+  
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <!--<p>Chillin' at home</p>-->
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:pink;font-size:25px;color: #f7f7f7;">Songs</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <!--<p>Haulin' A</p>-->
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Good Girls!</span>
+  </div>
+</div>
+
+</body>
 </html>
